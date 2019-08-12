@@ -1,0 +1,13 @@
+function broadcast (layerId, eventName, params) {
+  this.$children.forEach(child => {
+    if (!child.$options.propsData) { return false; }
+    var id = child.$options.propsData.vid;
+    if (id === layerId) {
+      child.$emit.apply(child, [eventName].concat(params));
+    } else {
+      broadcast.apply(child, [layerId, eventName].concat([params]));
+    }
+  });
+};
+
+export default broadcast;

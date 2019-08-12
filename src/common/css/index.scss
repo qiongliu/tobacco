@@ -1,0 +1,16 @@
+@import './reset.scss';
+@import './other.scss';
+
+body,
+html {
+  height: 100%;
+  line-height: 1;
+  font-family: 'simsun', 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#app {
+  height: 100%;
+  background: $color-main url(../../assets/img/gis/bg.png) center no-repeat;
+  background-size: 100% 100%;
+}
