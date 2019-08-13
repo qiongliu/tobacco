@@ -13,9 +13,9 @@ export let isEmptyObject = function (obj) {
 
 export let validator = (result) => {
   if (result.status === 200 && result.data) {
-    if (result.data.detail) {
-      if (result.data.detail) {
-        return result.data.detail;
+    if (result.data.data) {
+      if (result.data.data) {
+        return result.data.data;
       } else {
         return new Error('暂无数据');
       }
