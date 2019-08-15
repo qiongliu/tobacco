@@ -1,2 +1,2 @@
-// export const baseUrl = 'http://192.168.2.100:8080'
+// export const baseUrl = 'http://47.94.172.147'
 export const baseUrl = ''

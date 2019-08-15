@@ -51,7 +51,7 @@ export default {
     },
     textColor: {
       type: String,
-      default: '#ffffff'
+      default: '#000'
     },
     align: {
       type: String,

@@ -12,9 +12,21 @@ import 'element-ui/lib/theme-chalk/index.css';
 import 'common/iconfont/iconfont.css'
 import 'common/css/index.scss'
 
+import 'echarts/lib/chart/line'
+import 'echarts/lib/chart/bar'
+import 'echarts/lib/chart/scatter'
+import 'echarts/lib/chart/custom'
+import 'echarts/lib/component/tooltip'
+import 'echarts/lib/component/legend'
+import 'echarts/lib/component/toolbox'
+import 'echarts/lib/component/title'
+import 'echarts/lib/component/datazoom'
+
 Vue.use(openlayers)
-Vue.use(ElementUI);
-Vue.component('chart', Echarts)
+Vue.use(ElementUI, {
+  size: 'small'
+});
+Vue.component('v-chart', Echarts)
 
 Vue.config.productionTip = false
 

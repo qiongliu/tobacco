@@ -10,6 +10,6 @@ module.exports = {
   'font-size-large': '16px',
   'font-size-bigger': '20px',
   'margin': '8px',
-  'padding': '30px',
+  'padding': '20px 30px',
   'border-radius': '2px'
 };
