@@ -32,6 +32,10 @@ export default {
       type: String,
       default: '#ffffff'
     },
+    bgColor: {
+      type: String,
+      default: '#ffffff'
+    },
     align: {
       type: String,
       default: 'center'

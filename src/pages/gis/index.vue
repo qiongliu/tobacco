@@ -2,7 +2,7 @@
   <div class="g-gis">
     <realtime class="realtime" @setRealtimeData="setRealtimeDataHandle"></realtime>
     <gis class="gis" :stationData="realtimeData"></gis>
-    <forecast class="forecast"></forecast>
+    <forecast class="forecast" :stationData="realtimeData"></forecast>
   </div>
 </template>
 
@@ -30,7 +30,6 @@
     },
     methods: {
       setRealtimeDataHandle(data) {
-        console.log(data)
         this.realtimeData = data
       }
     }

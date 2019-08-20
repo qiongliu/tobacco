@@ -1,8 +1,8 @@
 <template>
   <div class="m-select">
     <ul>
-      <li v-for="(item, index) in data" :key="index" :style="{width: size[0], height: size[1], backgroundImage: currentIndex !== index ? `url(${bg})` : `url(${bgActive})`}" :class="currentIndex === index ? 'active' : ''"
-        @click="clickHandle(index, item.value)">{{item.label}}</li>
+      <li v-for="(item, index) in data" :key="index" :style="{width: size[0], height: size[1], backgroundImage: currentValue !== item.value ? `url(${bg})` : `url(${bgActive})`}" :class="currentValue === item.value ? 'active' : ''"
+        @click="clickHandle(item.value)">{{item.label}}</li>
     </ul>
   </div>
 </template>
@@ -10,6 +10,10 @@
 <script>
   export default {
     props: {
+      value: {
+        type: String,
+        default: 'tem'
+      },
       data: {
         type: Array,
         default () {
@@ -48,13 +52,14 @@
     },
     data() {
       return {
-        currentIndex: 0
+        currentValue: this.value
       }
     },
     methods: {
-      clickHandle(index, value) {
-        this.currentIndex = index
+      clickHandle(value) {
+        this.currentValue = value
         this.$emit('click', value)
+        this.$emit('update:value', value)
       }
     }
   }
@@ -74,7 +79,7 @@
       align-items: center;
       justify-content: center;
       font-size: $font-size;
-      margin: 0 10px;
+      margin: 0 4px;
       cursor: pointer;
     }
   }

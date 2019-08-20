@@ -148,7 +148,8 @@ export default {
           maxZoom: this.maxZoom
         }),
         controls: controlDefaults({
-          attribution: false
+          attribution: false,
+          zoom: false
         }),
         interactions: interactionDefaults({
           dragPan: this.dragPan,

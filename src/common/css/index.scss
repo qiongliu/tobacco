@@ -15,7 +15,7 @@ html {
   background-size: 100% 100%;
 }
 
-.f-gis-title {
+.f-gis-title, .f-title {
   font-size: $font-size-bigger;
   text-shadow: 2px 2px 2px $color-subMain;
 }
@@ -26,6 +26,22 @@ html {
   text-align: center;
   line-height: 36px;
   color: $color-subMain;
+}
+
+.f-green {
+  color: RGBA(64, 152, 215, 1)
+}
+.f-yellow {
+  color: RGBA(255, 255, 115, 1)
+}
+.f-red {
+  color: RGBA(243, 60, 60, 1)
+}
+.f-orange {
+    color: RGBA(251, 192, 80, 1)
+}
+.f-blue {
+  color: RGBA(118, 202, 135, 1)
 }
 
 .el-date-editor.el-input, .el-date-editor.el-input__inner {

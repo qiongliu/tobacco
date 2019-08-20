@@ -39,6 +39,7 @@ let basicTextStyle = function (options) {
     opacity: 1,
     offsetX: options.offsetX,
     offsetY: options.offsetY,
+    // backgroundFill: '#f00',
     // TODO 写 Text.vue 的时候修改以下两项
     fill: basicFillStyle({ fillColor: options.textColor }),
     stroke: options.textStroke ? basicStrokeStyle({
